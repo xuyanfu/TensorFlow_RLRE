@@ -180,12 +180,12 @@ if __name__ == '__main__':
     num_total = produce_label_data()
 
     '''P@N'''
-    #produce_pred_data(save_path='model/best_cnn_model.ckpt',output_path = 'result/best_pred_entitypair.pkl')
+    produce_pred_data(save_path='model/best_cnn_model.ckpt',output_path = 'result/best_pred_entitypair.pkl')
     result = P_N(label_path = 'data/label_entitypair.pkl',pred_path ='result/best_pred_entitypair.pkl')
     print ('best_cnn_P@100,200,300:',result)
     #[0.8, 0.735, 0.7066666666666667]
 
-    #produce_pred_data(save_path='model/origin_cnn_model.ckpt',output_path = 'result/origin_pred_entitypair.pkl')
+    produce_pred_data(save_path='model/origin_cnn_model.ckpt',output_path = 'result/origin_pred_entitypair.pkl')
     result = P_N(label_path = 'data/label_entitypair.pkl',pred_path ='result/origin_pred_entitypair.pkl')
     print('origin_cnn_P@100,200,300:', result)
     #[0.64, 0.67, 0.6566666666666666]
