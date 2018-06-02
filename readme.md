@@ -23,7 +23,7 @@ To run our code, the dataset should be put in the folder origin_data/ using the 
 - train.txt: training file, format (fb_mid_e1, fb_mid_e2, e1_name, e2_name, relation, sentence).
 - test.txt: test file, same format as train.txt.
 - relation2id.txt: all relations and corresponding ids, one per line.
-- vec.txt: the pre-train word embedding file
+- vec.txt: the pre-train word embedding file.
 - entity_ebd.npy: the entity embedding file.
 
 # Codes
