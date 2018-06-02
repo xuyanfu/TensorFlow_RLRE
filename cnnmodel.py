@@ -60,18 +60,18 @@ class CNN():
         self.inputs = tf.reshape(self.inputs, [-1,self.len_sentence,self.word_embedding+self.pos_size*2,1] )
 
 
-        #卷积层
+        
         conv = layers.conv2d(inputs =self.inputs ,num_outputs = self.cnn_size ,kernel_size = [3,60],stride=[1,60],padding='SAME')
 
-        #pooling层
+     
         max_pool = layers.max_pool2d(conv,kernel_size = [70,1],stride=[1,1])
         self.sentence = tf.reshape(max_pool, [-1, self.cnn_size])
 
-        #dropout层
+ 
         tanh = tf.nn.tanh(self.sentence)
         drop = layers.dropout(tanh,keep_prob=self.keep_prob)
 
-        #全连接层
+   
         self.outputs = layers.fully_connected(inputs = drop,num_outputs = self.num_classes,activation_fn = tf.nn.softmax)
 
         '''
