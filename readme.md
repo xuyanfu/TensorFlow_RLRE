@@ -35,7 +35,7 @@ The source codes are in the current main directory. **cnnmodel.py** contains the
 - Matplotlib
 - tqdm
 
-#Initialize
+# Initialize
 
 Before you train your model, you need to type the following command:
 
