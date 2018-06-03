@@ -16,7 +16,7 @@ We use the same dataset(NYT10) as in [Lin et al.,2016]. And we provide it in ori
 
 Pre-Trained Word Vectors are learned from New York Times Annotated Corpus (LDC Data LDC2008T19), which should be obtained from [[data]](https://catalog.ldc.upenn.edu/LDC2008T19). And we provide it also in the origin_data/ directory.
 
-Entity embedding are randomly initialized. The number of entities in the entity embedding should be the same with the number of entities in train.txt.
+Entity embeddings are randomly initialized. The number of entities in the entity embedding should be the same with the number of entities in train.txt.
 
 To run our code, the dataset should be put in the folder origin_data/ using the following format, containing five files.
 
