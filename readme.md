@@ -1,5 +1,5 @@
 # Reinforcement Learning for Relation Classification from Noisy Data(TensorFlow)
-Relation classification from noisy data, aiming to categorize semantic relations between two entities given a plain text with the automantically generated training data.The original [[code]](https://github.com/JuneFeng/RelationClassification-RL) of Reinforcement Learning for Relation Classification from Noisy Data is C++. This is a tensorflow version.
+Relation classification from noisy data, aiming to categorize semantic relations between two entities given a plain text with the automantically generated training data.The original [[code]](https://github.com/JuneFeng/RelationClassification-RL) of Reinforcement Learning for Relation Classification from Noisy Data is C++. This is a tensorflow implementation.
 
 # Evaluation Results
 P@N comparison between RLCNN and CNN:
