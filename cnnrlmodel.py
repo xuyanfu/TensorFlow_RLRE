@@ -270,10 +270,6 @@ def train():
                             action = 1
                             '''
                             #add produce data for training cnn model
-                            '''
-                            action 全部为0有bug
-                            action = 0
-                            '''
                             list_action.append(action)
                             list_state.append(state)
                             state = env.step(action)
