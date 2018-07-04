@@ -222,11 +222,6 @@ def train():
                             prob = sess2.run(myAgent.prob,feed_dict = feed_dict)
                             old_prob.append(prob[0])
                             action = get_action(prob)
-                            '''
-                            if action == None:
-                                print (123)
-                            action = 1
-                            '''
                             #add produce data for training cnn model
                             '''
                             action 全部为0有bug
