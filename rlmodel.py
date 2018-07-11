@@ -240,7 +240,7 @@ def train():
                         list_list_reward.append(tmp_reward)
 
 
-                    avg_reward = average_reward / sampletimes
+                    avg_reward = avg_reward / sampletimes
                     # add sample times
                     for j in range(sampletimes):
 
