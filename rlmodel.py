@@ -83,7 +83,7 @@ class agent():
 
 
         #get action
-        entity_embedding = tf.get_variable(name = 'entity_embedding',initializer=entity_ebd,trainable=False)#set trainable=False 之后训练速度大幅度上升
+        entity_embedding = tf.get_variable(name = 'entity_embedding',initializer=entity_ebd,trainable=False)
 
 
         self.state_in = tf.placeholder(shape=[None, s_size], dtype=tf.float32)
