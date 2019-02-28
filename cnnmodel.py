@@ -80,7 +80,8 @@ class CNN():
         self.responsible_outputs = - tf.reduce_mean(tf.log(tf.gather(tf.reshape(self.outputs, [-1]),self.indexes)))
         '''
         #loss
-        self.cross_loss = -tf.reduce_mean( tf.log(tf.reduce_sum( self.input_y  * self.outputs ,axis=1)))
+        #self.cross_loss = -tf.reduce_mean( tf.log(tf.reduce_sum( self.input_y  * self.outputs ,axis=1)))
+        self.cross_loss = -tf.reduce_mean(tf.reduce_sum( self.input_y * tf.log( self.outputs),axis=1))
         self.reward =  tf.log(tf.reduce_sum( self.input_y  * self.outputs ,axis=1))
 
         self.l2_loss = tf.contrib.layers.apply_regularization(regularizer=tf.contrib.layers.l2_regularizer(0.0001),
